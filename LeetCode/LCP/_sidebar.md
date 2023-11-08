@@ -1,0 +1,3 @@
+- [返回上一级 [LeetCode]](LeetCode/)
+- [LCP](LeetCode/LCP/)
+  - [LCP 07. 传递信息（简单）](LeetCode/LCP/LCP%2007.%20传递信息（简单）.md)
