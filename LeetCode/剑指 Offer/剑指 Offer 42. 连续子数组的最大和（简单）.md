@@ -47,7 +47,7 @@ f[i] = \max(nums[i], f[i - 1] + nums[i])
 $$
 
 代码：
-```Java
+```java
 class Solution {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
@@ -75,7 +75,7 @@ class Solution {
 因此我们可以使用「有限变量」或者「滚动数组」的方式，将空间优化至 $O(1)$。
 
 代码：
-```Java
+```java
 class Solution {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
@@ -88,7 +88,7 @@ class Solution {
     }
 }
 ```
-```Java
+```java
 class Solution {
     public int maxSubArray(int[] nums) {
         int n = nums.length;
@@ -123,7 +123,7 @@ class Solution {
 其余分析与本题同理。
 
 代码：
-```Java
+```java
 class Solution {
     public int maxProduct(int[] nums) {
         int n = nums.length;
@@ -142,7 +142,7 @@ class Solution {
     }
 }
 ```
-```Java
+```java
 class Solution {
     public int maxProduct(int[] nums) {
         int n = nums.length;

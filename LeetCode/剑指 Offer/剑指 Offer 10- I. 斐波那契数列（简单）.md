@@ -38,7 +38,7 @@ Tag : 「动态规划」、「线性 DP」、「记忆化搜索」、「打表�
 既然转移方程都给出了，直接根据转移方程从头到尾递递推一遍即可。
 
 代码：
-```Java
+```java
 class Solution {
     int mod = (int)1e9+7;
     public int fib(int n) {
@@ -66,7 +66,7 @@ class Solution {
 为防止重复计算，我们需要加入「记忆化搜索」功能，同时利用某个值 $x$ 在不同的样例之间可能会作为“中间结果”被重复计算，并且计算结果 $fib(x)$ 固定，我们可以使用 `static` 修饰缓存器，以实现计算过的结果在所有测试样例中共享。
 
 代码：
-```Java
+```java
 class Solution {
     static int mod = (int)1e9+7;
     static int N = 110;
@@ -90,7 +90,7 @@ class Solution {
 经过「解法二」，我们进一步发现，可以利用数据范围只有 $100$ 进行打表预处理，然后直接返回。
 
 代码：
-```Java
+```java
 class Solution {
     static int mod = (int)1e9+7;
     static int N = 110;
@@ -213,7 +213,7 @@ $$
 计算 $mat^{n - 1}$ 可以套用「快速幂」进行求解。
 
 代码：
-```Java
+```java
 class Solution {
     int mod = (int)1e9+7;
     long[][] mul(long[][] a, long[][] b) {

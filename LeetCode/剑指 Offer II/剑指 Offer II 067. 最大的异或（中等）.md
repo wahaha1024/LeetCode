@@ -92,7 +92,7 @@ Tag : 「贪心」、「字典树」
 担心有不熟 Java 的同学，在代码里添加了相应注释说明。
 
 代码：
-```Java
+```java
 class Solution {
     // static 成员整个类独一份，只有在类首次加载时才会创建，因此只会被 new 一次
     static int N = (int)1e6;
@@ -149,7 +149,7 @@ class Solution {
 相比于使用 `static` 来优化，一个更好的做法是使用类来实现 $Trie$，这样可以真正做到「按需分配」内存，缺点是会发生不确定次数的 `new`。
 
 代码：
-```Java
+```java
 class Solution {
     class Node {
         Node[] ns = new Node[2];

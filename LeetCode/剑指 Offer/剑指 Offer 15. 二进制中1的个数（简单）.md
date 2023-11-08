@@ -37,7 +37,7 @@ Tag : 「位运算」、「分治」
 ![image.png](https://pic.leetcode-cn.com/1616375441-WGCssd-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public int hammingWeight(int n) {
         int ans = 0;
@@ -66,7 +66,7 @@ public class Solution {
 ![image.png](https://pic.leetcode-cn.com/1616375636-fXCFNF-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public int hammingWeight(int n) {
         int ans = 0;
@@ -96,7 +96,7 @@ public class Solution {
 ![image.png](https://pic.leetcode-cn.com/1616375636-fXCFNF-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public int hammingWeight(int n) {
         int ans = 0;
@@ -120,7 +120,7 @@ public class Solution {
 ![image.png](https://pic.leetcode-cn.com/1616378128-yBWadF-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public int hammingWeight(int n) {
         n = (n & 0x55555555) + ((n >>> 1)  & 0x55555555);

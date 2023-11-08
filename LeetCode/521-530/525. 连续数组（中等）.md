@@ -40,7 +40,7 @@ Tag : 「前缀和」、「哈希表」
 从而将问题转化为：**如何求得最长一段区间和为 $0$ 的子数组。** 同时使用「哈希表」来记录「某个前缀和出现的最小下标」是多少。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public int findMaxLength(int[] nums) {
         int n = nums.length, ans = 0;

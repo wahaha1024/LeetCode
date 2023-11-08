@@ -43,7 +43,7 @@ Tag : 「二叉树」、「DFS」、「BFS」、「递归」、「迭代」
 其中判断当前所在层数，无须引用额外变量，直接根据当前 `ans` 的元素大小即可。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         List<List<Integer>> ans = new ArrayList<>();
@@ -100,7 +100,7 @@ function levelOrder(root: TreeNode | null): number[][] {
 不过对于 `TS`  语言来说，由于 `DFS` 过程中无法知道当前层有多少节点，因此只能在使用「哈希表」记录每层「从左往右」的方向，然后在构造答案时，运用「双指针」来将奇数层的节点进行翻转。
 
 Java 代码：
-```Java
+```java
 class Solution {
     Map<Integer, LinkedList<Integer>> map = new HashMap<>();
     int max = -1;

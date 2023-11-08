@@ -37,7 +37,7 @@ Tag : 「二叉树搜索树」、「BST」、「二分」
 只能退而求之，遍历行/列，然后再对列/行进行二分。
 
 代码：
-```Java
+```java
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix.length == 0 || matrix[0].length == 0) return false;
@@ -56,7 +56,7 @@ class Solution {
 }
 ```
 -
-```Java
+```java
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix.length == 0 || matrix[0].length == 0) return false;
@@ -93,7 +93,7 @@ class Solution {
 2. 当前节点「小于」目标值，搜索当前节点的「右子树」，也就是当前矩阵位置的「下方格子」，即 $r$++
 
 代码：
-```Java
+```java
 class Solution {
     public boolean searchMatrix(int[][] matrix, int target) {
         if (matrix.length == 0 || matrix[0].length == 0) return false;

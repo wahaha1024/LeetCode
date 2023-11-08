@@ -31,7 +31,7 @@ Tag : 「二分」
 一个朴素的想法是，找到目标值 $target$ 「首次」出现或者「最后」出现的下标，然后「往后」或者「往前」进行数量统计。
 
 代码：
-```Java
+```java
 // 找到目标值「最后」出现的分割点，并「往前」进行统计
 class Solution {
     public int search(int[] nums, int t) {
@@ -48,7 +48,7 @@ class Solution {
     }
 }
 ```
-```Java
+```java
 // 找到目标值「首次」出现的分割点，并「往后」进行统计
 class Solution {
     public int search(int[] nums, int t) {
@@ -75,7 +75,7 @@ class Solution {
 进一步，我们可以直接经过两次「二分」找到左右边界，计算总长度即是 $target$ 的数量。
 
 代码：
-```Java
+```java
 class Solution {
     public int search(int[] nums, int t) {
         int n = nums.length;

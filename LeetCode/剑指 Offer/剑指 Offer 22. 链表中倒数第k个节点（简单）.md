@@ -29,7 +29,7 @@ Tag : 「链表」、「栈」、「队列」、「快慢指针」
 ![image.png](https://pic.leetcode-cn.com/1630544371-cFgLAj-image.png)
 
 代码（栈）：
-```Java
+```java
 class Solution {
     public ListNode getKthFromEnd(ListNode head, int k) {
         Deque<ListNode> d = new ArrayDeque<>();
@@ -44,7 +44,7 @@ class Solution {
 }
 ```
 代码（队列）：
-```Java
+```java
 class Solution {
     public ListNode getKthFromEnd(ListNode head, int k) {
         Deque<ListNode> d = new ArrayDeque<>();
@@ -71,7 +71,7 @@ class Solution {
 ![image.png](https://pic.leetcode-cn.com/1630543998-jOEXKC-image.png)
 
 代码：
-```Java
+```java
 class Solution {
     public ListNode getKthFromEnd(ListNode head, int k) {
         int cnt = 0;
@@ -97,7 +97,7 @@ class Solution {
 ![image.png](https://pic.leetcode-cn.com/1630544021-KRXyeD-image.png)
 
 代码：
-```Java
+```java
 class Solution {
     public ListNode getKthFromEnd(ListNode head, int k) {
         ListNode slow = head, fast = head;

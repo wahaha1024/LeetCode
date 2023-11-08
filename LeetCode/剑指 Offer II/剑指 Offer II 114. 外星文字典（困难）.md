@@ -62,7 +62,7 @@ Tag : 「图论」、「拓扑排序」、「建图」、「图论 BFS」
 若最终出队节点数量与总数量 $cnt$ 相等，说明这是一张拓扑图（无环，字符之间不存在字典序冲突），出队的顺序即是字典序，否则存在冲突，返回空串。
 
 代码：
-```Java
+```java
 class Solution {
     int N = 26, M = N * N, idx = 0, cnt = 0;
     int[] he = new int[N], e = new int[M], ne = new int[M];

@@ -37,7 +37,7 @@ Tag : 「前缀和」、「哈希表」
 我们可以预处理前缀和数组 `sum`（前缀和数组下标默认从 $1$ 开始），对于求解以某一个 $nums[i]$ 为结尾的，和为 $k$ 的子数组数量，本质上是求解在 $[0, i]$ 中，`sum` 数组中有多少个值为 $sum[i + 1] - k$ 的数，这可以在遍历过程中使用「哈希表」进行同步记录。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public int subarraySum(int[] nums, int k) {
         int n = nums.length, ans = 0;

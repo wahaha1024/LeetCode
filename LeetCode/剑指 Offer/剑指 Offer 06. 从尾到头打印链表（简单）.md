@@ -27,7 +27,7 @@ Tag : 「链表」、「迭代」、「递归」、「双指针」
 在遍历链表 `head` 时，使用变长数组将节点值进行转存，随后再利用变长数组来「从后往前」构造定长数组并进行返回即可（其中 `TS`  代码无须额外构造定长数组，直接在原有数组基础上使用「双指针」翻转即可）。
 
 Java 代码：
-```Java 
+```java 
 class Solution {
     public int[] reversePrint(ListNode head) {
         List<Integer> list = new ArrayList<>();
@@ -69,7 +69,7 @@ function reversePrint(head: ListNode | null): number[] {
 使用「递归」求解只需要进行常规的 `DFS`  即可，每次先将当前节点的 `next` 指针进行递归处理，然后再将当前节点值加入数组，即可实现「从后往前」的顺序添加。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public int[] reversePrint(ListNode head) {
         List<Integer> list = new ArrayList<>();

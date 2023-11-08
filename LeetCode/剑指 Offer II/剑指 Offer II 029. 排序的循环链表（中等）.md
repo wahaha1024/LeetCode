@@ -69,7 +69,7 @@ Tag : 「链表」、「模拟」
     * 若不满足上述两条件，需要从分割位置出发，找到目标插入位置，即满足 `he.val <= x && x <= he.next.val` 的位置。
 
 代码：
-```Java
+```java
 class Solution {
     public Node insert(Node he, int x) {
         Node t = new Node(x);

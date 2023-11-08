@@ -29,7 +29,7 @@ Tag : 「字符串」、「回溯算法」
 
 设计如下 `DFS` 函数：
 
-```Java
+```java
 /**
  *   cs : 原字符串
  *    u : 当前决策到目标字符串的哪一位
@@ -52,7 +52,7 @@ void dfs(char[] cs, int u, String cur);
 直接决策目标字符串哪一位取哪个字符即可，同时使用布尔数组记录哪些字符已使用。
 
 代码：
-```Java
+```java
 class Solution {
     int N = 10;
     Set<String> set = new HashSet<>();
@@ -101,7 +101,7 @@ class Solution {
 这里的「状态完全相同」是指：**当前形成部分结果为 $cur$ 相同，同时剩余字符集合也相同**。
 
 代码：
-```Java
+```java
 class Solution {
     int N = 10;
     List<String> list = new ArrayList<>();

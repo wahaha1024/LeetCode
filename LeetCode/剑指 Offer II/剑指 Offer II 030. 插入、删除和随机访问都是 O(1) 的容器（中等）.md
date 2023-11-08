@@ -59,7 +59,7 @@ randomizedSet.getRandom(); // 由于 2 是集合中唯一的数字，getRandom �
 * `getRandom` 操作：由于我们人为确保了 $[0, idx]$ 均为存活值，因此直接在 $[0, idx + 1)$ 范围内进行随机即可。
 
 代码：
-```Java
+```java
 class RandomizedSet {
     static int[] nums = new int[200010];
     Random random = new Random();

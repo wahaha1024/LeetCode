@@ -72,7 +72,7 @@ Tag : 「链表」
 ![image.png](https://pic.leetcode-cn.com/1626830901-LPHwDT-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode a, ListNode b) {
         for (ListNode h1 = a; h1 != null ; h1 = h1.next) {
@@ -100,7 +100,7 @@ public class Solution {
 ![image.png](https://pic.leetcode-cn.com/1626830926-HwTmvx-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode a, ListNode b) {
         Deque<ListNode> d1 = new ArrayDeque<>(), d2 = new ArrayDeque<>();
@@ -137,7 +137,7 @@ public class Solution {
 ![image.png](https://pic.leetcode-cn.com/1626830952-eYrqqV-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode a, ListNode b) {
         Set<ListNode> set = new HashSet<>();
@@ -164,7 +164,7 @@ public class Solution {
 ![image.png](https://pic.leetcode-cn.com/1626830972-azmmse-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode a, ListNode b) {
         int c1 = 0, c2 = 0;
@@ -208,7 +208,7 @@ public class Solution {
 ![image.png](https://pic.leetcode-cn.com/1626830994-gsqrMn-image.png)
 
 代码：
-```Java
+```java
 public class Solution {
     public ListNode getIntersectionNode(ListNode a, ListNode b) {
         ListNode ta = a, tb = b;

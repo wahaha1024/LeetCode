@@ -55,7 +55,7 @@ $$
 对 $n$ 进行最后一次的试减（更新 $n$），若恰好有 $n = 0$，说明答案为 $x$ 的最后一位，可由 `x % 10` 取得；若大于 $0$，说明答案是 $x + 1$ 的第 $n$ 位（十进制表示，从左往右数），可由 `(x + 1) / (int) (Math.pow(10, len - n)) % 10` 取得。
 
 代码：
-```Java
+```java
 class Solution {
     public int findNthDigit(int n) {
         int len = 1;
@@ -91,7 +91,7 @@ class Solution {
 * 当 `n` 不为 $0$，说明答案为 `start` 数值中从左往右数的第 $n$ 位，可通过解法一的方式取得，也可以将其转字符串再通过下标获取。
 
 代码：
-```Java
+```java
 class Solution {
     long getCnt(int len) {
         return (long)(Math.pow(10, len) - Math.pow(10, len - 1)) * len;

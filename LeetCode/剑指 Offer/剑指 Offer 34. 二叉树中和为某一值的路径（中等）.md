@@ -45,7 +45,7 @@ Tag : 「二叉树」、「DFS」、「BFS」、「递归」、「迭代」
 使用 `DFS` 的好处是在记录路径的过程中可以使用「回溯」的方式进行记录及回退，而无须时刻进行路径数组的拷贝。
 
 Java 代码：
-```Java
+```java
 class Solution {
     List<List<Integer>> ans = new ArrayList<>();
     int t;
@@ -95,7 +95,7 @@ function dfs(root: TreeNode | null, cur: number, list: Array<number>): void {
 由于 `BFS` 过程并非按照路径进行（即相邻出队的节点并非在同一路径），因此我们每次创建新的 `TNode` 对象时，需要对路径进行拷贝操作。
 
 Java 代码：
-```Java
+```java
 class Solution {
     class Node {
         TreeNode node;

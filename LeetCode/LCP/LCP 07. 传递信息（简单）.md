@@ -60,7 +60,7 @@ Tag : 「图论搜索」、「图论 BFS」、「图论 DFS」、「线性 DP」
 一些细节：为了方便找到某个点 $i$ 所能到达的节点，我们需要先预处理出所有的边。数据量较少，直接使用 `Map` 套 `Set` 即可。
 
 代码：
-```Java
+```java
 class Solution {
     public int numWays(int n, int[][] rs, int k) {
         Map<Integer, Set<Integer>> map = new HashMap<>();
@@ -103,7 +103,7 @@ class Solution {
 在 `DFS` 过程中限制深度最多为 $k$，然后检查所达节点为 `n-1` 的次数即可。
 
 代码：
-```Java
+```java
 class Solution {
     Map<Integer, Set<Integer>> map = new HashMap<>();
     int n, k, ans;
@@ -157,7 +157,7 @@ f[i][j] = \sum_{i = 0}^{relation.length - 1}f[i - 1][p], relation[i][0]=p,relati
 $$
 
 代码：
-```Java
+```java
 class Solution {
     public int numWays(int n, int[][] rs, int k) {
         int[][] f = new int[k + 1][n];

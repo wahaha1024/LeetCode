@@ -47,7 +47,7 @@ Tag : 「优先队列（堆）」、「线段树」、「分块」、「单调�
 当下标达到首个滑动窗口的右端点后，每次尝试从优先队列（大根堆）中取出最大值（若堆顶元素的下标小于当前滑动窗口左端点时，则丢弃该元素）。
 
 代码：
-```Java 
+```java 
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         PriorityQueue<int[]> q = new PriorityQueue<>((a,b)->b[1]-a[1]);
@@ -78,7 +78,7 @@ class Solution {
 直接写 `build` 四倍空间的线段树数组实现即可。
 
 代码：
-```Java 
+```java 
 class Solution {
     class Node {
         int l, r, val;
@@ -154,7 +154,7 @@ class Solution {
 * `int query(int l, int r)` ：查询 $[l, r]$ 中的最大值，如果 $l$ 和 $r$ 所在块相同，直接遍历 $[l, r]$ 进行取值；若 $l$ 和 $r$ 不同块，则处理 $l$ 和 $r$ 对应的块内元素后，对块编号在 $(getIdx(l), getIdx(r))$ 之间的块进行遍历。
 
 代码：
-```Java 
+```java 
 class Solution {
     int n, m, len;
     int[] nums, region;
@@ -208,7 +208,7 @@ class Solution {
 为方便从尾部添加元素，从头部获取答案，我们可使用「双端队列」存储所有候选元素。
 
 代码：
-```Java 
+```java 
 class Solution {
     public int[] maxSlidingWindow(int[] nums, int k) {
         Deque<Integer> d = new ArrayDeque<>();

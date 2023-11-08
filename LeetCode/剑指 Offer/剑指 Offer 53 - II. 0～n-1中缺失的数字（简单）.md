@@ -39,7 +39,7 @@ Tag : 「二分」
 同时由于缺失元素可能是 $[0, n - 1]$ 范围内的最大值，因此我们需要二分结束后再 `check` 一次，若不满足，说明缺失的元素值为 $n - 1$。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public int missingNumber(int[] nums) {
         int l = 0, r = nums.length - 1;

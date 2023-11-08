@@ -25,7 +25,7 @@ Tag : 「链表」、「迭代」、「递归」
 迭代做法只需要使用两个指针即可，复用 `head` 变量来代指当前处理到的节点，使用 `prev` 变量代指原链表中 `head` 的上一节点，只需使用循环构造出所有的 `head.next = prev` 关系即可。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public ListNode reverseList(ListNode head) {
         ListNode prev = null;
@@ -64,7 +64,7 @@ function reverseList(head: ListNode | null): ListNode | null {
 不失一般性考虑某个递归回合：当传入节点 `head` 为空，或者其 `next` 节点为空（即只有单个节点）时，我们 直接返回 `head` 即可。而对于剩余情况，对于某个节点 `head` 而言，我们可以先递归处理它的剩余部分 `reverseList(head.next)` ，此时我们拿到的返回值既是以 `head.next` 为头结点进行翻转后的新链表头结点，也是以 `head` 为头结点进行翻转后的新链表头结点，将其记为 `ans`。我们只需要关注原有 `head` 部分如何处理，即将原来的 `head -> head.next` 关系进行翻转，则有 `head.next.next = head`，并 `head.next` 指向空即可，最后返回 `ans`。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public ListNode reverseList(ListNode head) {
         if (head == null || head.next == null) return head;

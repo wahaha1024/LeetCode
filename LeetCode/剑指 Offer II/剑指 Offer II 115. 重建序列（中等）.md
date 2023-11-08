@@ -81,7 +81,7 @@ Tag : 「图论」、「拓扑排序」、「建图」、「图论 BFS」
 在拓扑序过程中若有 $t$ 不等于 $nums[loc]$（构造出来的方案与 `nums` 不同） 或某次拓展过程中发现队列元素不止 $1$ 个（此时可能的原因有 :「起始入度为 $0$ 的点不止一个或存在某些点根本不在 $ss$ 中」或「单次拓展新产生的入度为 $0$ 的点不止一个，即拓扑序不唯一」），则直接返回 `False`，
 
 Java 代码：
-```Java 
+```java 
 class Solution {
     int N = 10010, M = N, idx;
     int[] he = new int[N], e = new int[M], ne = new int[M], in = new int[N];

@@ -50,7 +50,7 @@ Tag : 「二分」
 ![image.png](https://pic.leetcode-cn.com/1617852745-LoBNPK-image.png)
 
 java 代码：
-```Java
+```java
 class Solution {
     public int minArray(int[] nums) {
         int n = nums.length;

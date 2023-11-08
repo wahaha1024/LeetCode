@@ -67,7 +67,7 @@ Tag : 「二叉树」、「层序遍历」
 3. 循环流程 $2$，直到整个序列化字符串被处理完（注意跳过最后一位分隔符）。
 
 代码：
-```Java
+```java
 public class Codec {
     int INF = -2000;
     TreeNode emptyNode = new TreeNode(INF);

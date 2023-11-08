@@ -70,7 +70,7 @@ Tag : 「哈希表」、「链表」
 2. 对原链表和新链表进行同时遍历，对于原链表的每个节点上的 `random` 都通过「哈希表」找到对应的新 `random` 节点，并在新链表上构造 `random` 关系。
 
 代码：
-```Java
+```java
 class Solution {
     public Node copyRandomList(Node head) {
         Node t = head;
@@ -113,7 +113,7 @@ class Solution {
 ![image.png](https://pic.leetcode-cn.com/1626919165-GuGmGo-image.png)
 
 代码：
-```Java
+```java
 class Solution {
     public Node copyRandomList(Node head) {
         if (head == null) return head;

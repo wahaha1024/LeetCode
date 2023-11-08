@@ -33,7 +33,7 @@ Tag : 「二叉树」、「DFS」、「BFS」、「递归」、「迭代」
 使用「迭代」进行求解是容易的，只需使用常规的 `BFS` 方法进行层序遍历即可。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public int[] levelOrder(TreeNode root) {
         List<Integer> list = new ArrayList<>();
@@ -82,7 +82,7 @@ function levelOrder(root: TreeNode | null): number[] {
 首先我们按照「中序遍历」的方式进行 `DFS`，同时在 `DFS` 过程中传递节点所在的深度（`root` 节点默认在深度最小的第 $0$ 层），每次处理当前节点时，通过哈希表获取所在层的数组，并将当前节点值追加到数组尾部，同时维护一个最大深度 `max`，在 `DFS` 完成后，再使用深度范围 $[0, max]$ 从哈希表中进行构造答案。
 
 Java 代码：
-```Java
+```java
 class Solution {
     Map<Integer, List<Integer>> map = new HashMap<>();
     int max = -1, cnt = 0;

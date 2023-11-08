@@ -47,7 +47,7 @@ Tag : 「前缀和」、「二分」
 利用前缀和数组的「单调递增」（即具有二段性），该操作可使用「二分」来做。
 
 代码：
-```Java
+```java
 class Solution {
     public int minSubArrayLen(int t, int[] nums) {
         int n = nums.length, ans = n + 10;

@@ -38,7 +38,7 @@ Tag : 「滑动窗口」、「双指针」
 当 $cur >= k$ 时，我们考虑将左端点 $j$ 右移，同时消除原来左端点元素 $nums[j]$ 对 $cur$ 的贡献，直到 $cur >= k$ 不再满足，这样我们就可以得到每个右端点 $nums[i]$ 的最远左端点 $nums[j]$，从而得知以 $nums[i]$ 为结尾的合法子数组个数为 $i - j + 1$。
 
 Java 代码：
-```Java 
+```java 
 class Solution {
     public int numSubarrayProductLessThanK(int[] nums, int k) {
         int n = nums.length, ans = 0;

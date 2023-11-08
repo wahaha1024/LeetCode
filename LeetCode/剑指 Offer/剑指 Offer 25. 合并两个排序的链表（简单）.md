@@ -29,7 +29,7 @@ Tag : 「链表」、「迭代」、「递归」
 当 `l1` 和 `l2` 均不为空的时候，找到两者中的较小值拼接到 `cur ` 的后面，若 `l1` 和 `l2` 任一为空，则将另外的链表拼接完。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         ListNode dummy = new ListNode(-1), cur = dummy;
@@ -97,7 +97,7 @@ function mergeTwoLists(l1: ListNode | null, l2: ListNode | null): ListNode | nul
 * 其余情况 `l1.val >= l2.val`，分析同理，此时有 `l2.next = mergeTwoLists(l2.next, l1)`，同时返回 `l2`。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null) return l2;

@@ -38,7 +38,7 @@ Tag : 「二叉树」、「DFS」、「BFS」、「递归」、「迭代」
 只需要在每次 `BFS` 拓展时，将完整的层进行取出，存如独立数组后再加入答案。
 
 Java 代码：
-```Java
+```java
 class Solution {
     public List<List<Integer>> levelOrder(TreeNode root) {
         Deque<TreeNode> d = new ArrayDeque<>();
@@ -94,7 +94,7 @@ function levelOrder(root: TreeNode | null): number[][] {
 首先我们按照「中序遍历」的方式进行 `DFS`，同时在 `DFS` 过程中传递节点所在的深度（`root` 节点默认在深度最小的第 $0$ 层），每次处理当前节点时，通过哈希表获取所在层的数组，并将当前节点值追加到数组尾部，同时维护一个最大深度 `max`，在 `DFS` 完成后，再使用深度范围 $[0, max]$ 从哈希表中进行构造答案。
 
 Java 代码：
-```Java
+```java
 class Solution {
     Map<Integer, List<Integer>> map = new HashMap<>();
     int max = -1;

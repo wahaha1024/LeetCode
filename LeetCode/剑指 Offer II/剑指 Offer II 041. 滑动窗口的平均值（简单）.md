@@ -44,7 +44,7 @@ movingAverage.next(5); // 返回 6.0 = (10 + 3 + 5) / 3
 利用 `next` 操作最多被调用 $10^4$ 次，我们可以使用直接开个 $10^4$ 数组来充当双端队列，使用两指针 `j` 和 `i` 分别指向队列的头部和尾部。
 
 Java 代码：
-```Java
+```java
 class MovingAverage {
     int[] arr = new int[10010];
     int n, sum, j, i;
