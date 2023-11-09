@@ -13,18 +13,12 @@
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <!-- 默认主题 -->
     <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css"> -->
-    <link 
-        rel="stylesheet"
-        href="//cdn.jsdelivr.net/npm/docsify-darklight-theme@latest/dist/style.min.css"
-        title="docsify-darklight-theme"
-        type="text/css"
-    />
+    <link rel="stylesheet" href="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-darklight-theme@latest/dist/style.min.css" />
     <link rel="stylesheet" href="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-giscus@1.0.0/dist/giscus.css">
 
 </head>
 
 <body>
-    <div id="app"></div>
     <script>
         window.$docsify = {
             // 项目名称
@@ -44,30 +38,28 @@
             // 小屏设备下合并导航栏到侧边栏
             mergeNavbar: true,
             /*搜索相关设置*/
-            auto2top: true,//切换页面后是否自动跳转到页面顶部
-            //全文搜索
             search: {
-                //maxAge: 86400000, // 过期时间，单位毫秒，默认一天
-                paths: 'auto',
-                placeholder: '搜索',
+                maxAge: 86400000,// 过期时间，单位毫秒，默认一天
+                paths: 'auto',// 注意：仅适用于 paths: 'auto' 模式
+                placeholder: '搜索',              
+                // 支持本地化
                 noData: '找不到结果',
-                // 搜索标题的最大程级, 1 - 6
-                depth: 3,
+                depth: 4,
+                hideOtherSidebarContent: false,
+                namespace: 'LeetCode',
             }
         }
     </script>
     <!-- docsify的js依赖 -->
-    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
-    <!--Java代码高亮-->
-    <script src="//unpkg.com/prismjs/components/prism-java.js"></script>
-    <!--全文搜索,直接用官方提供的无法生效-->
-    <script src="https://cdn.bootcss.com/docsify/4.5.9/plugins/search.min.js"></script>
-    <!-- 复制到剪贴板 -->
-    <script src="//unpkg.com/docsify-copy-code"></script>
-    <!-- 图片缩放 -->
-    <script src="//unpkg.com/docsify/lib/plugins/zoom-image.js"></script>
-    <!-- 字数统计 -->
-    <script src="//unpkg.com/docsify-count/dist/countable.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/docsify.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/prismjs/components/prism-java.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-copy-code@2.1.1/dist/docsify-copy-code.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/plugins/search.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify/lib/plugins/zoom-image.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-darklight-theme@latest/dist/index.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-contributors@latest/dist/index.min.js"></script>
+    <script src="https://cdn-doocs.oss-cn-shenzhen.aliyuncs.com/npm/docsify-lastmodified/index.min.js"></script>
 </body>
 
 </html>
