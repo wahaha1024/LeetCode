@@ -13,6 +13,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "wahaha1024"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/wahaha1024/LeetCode.git",
+    "accountId": "6a3203f2-04f3-4755-b494-302d680498bf"
+  }
+}]]></component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -23,6 +35,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "code.cleanup.on.save": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -30,7 +43,8 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "rearrange.code.on.save": "true",
+    "settings.editor.selected.configurable": "preferences.sourceCode.Java",
     "vue.rearranger.settings.migration": "true",
     "应用程序.ID15ThreeSum (1).executor": "Run",
     "应用程序.ID15ThreeSum (2).executor": "Debug",
@@ -43,7 +57,7 @@
   <component name="RunManager" selected="应用程序.ID15ThreeSum (5)">
     <configuration name="ID15ThreeSum (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID15ThreeSum" />
-      <module name="LeetCode" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.editor.cn.*" />
@@ -56,7 +70,7 @@
     </configuration>
     <configuration name="ID15ThreeSum (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID15ThreeSum" />
-      <module name="LeetCode" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.editor.cn.*" />
@@ -69,7 +83,7 @@
     </configuration>
     <configuration name="ID15ThreeSum (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID15ThreeSum" />
-      <module name="LeetCode" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.editor.cn.*" />
@@ -82,7 +96,7 @@
     </configuration>
     <configuration name="ID15ThreeSum (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID15ThreeSum" />
-      <module name="LeetCode" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.editor.cn.*" />
@@ -95,7 +109,7 @@
     </configuration>
     <configuration name="ID15ThreeSum (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="leetcode.editor.cn.ID15ThreeSum" />
-      <module name="LeetCode" />
+      <module name="leetcode" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="leetcode.editor.cn.*" />
@@ -135,7 +149,7 @@
       <workItem from="1791293306876" duration="1624000" />
       <workItem from="1791294955028" duration="2715000" />
       <workItem from="1791378222928" duration="523000" />
-      <workItem from="1791378758787" duration="806000" />
+      <workItem from="1791378758787" duration="1921000" />
     </task>
     <servers />
   </component>

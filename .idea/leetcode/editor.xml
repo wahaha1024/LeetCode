@@ -36,6 +36,17 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/ID42TrappingRainWater.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/src/leetcode/editor/cn/doc/content/ID42TrappingRainWater.md" />
+              <option name="frontendQuestionId" value="leetcode.cn42" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/src/leetcode/editor/cn/ID42TrappingRainWater.java" />
+              <option name="titleSlug" value="trapping-rain-water" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/leetcode/editor/cn/leetcode/editor/cn/ID15ThreeSum.java">
           <value>
             <LeetcodeEditor>
